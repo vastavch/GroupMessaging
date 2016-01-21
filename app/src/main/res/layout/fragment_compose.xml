@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="mad.com.GroupMeessaging.Compose">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView android:text="Message :" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblMessage"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/txtMessage"
+            android:layout_marginTop="39dp"
+            android:maxLength="120"
+            android:layout_below="@+id/lblMessage"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:id="@+id/btnSend"
+            android:background="#0224ff"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="161dp" />
+    </RelativeLayout>
+
+</FrameLayout>

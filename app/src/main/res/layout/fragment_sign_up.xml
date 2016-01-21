@@ -1,0 +1,67 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="mad.com.GroupMeessaging.SignUp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtConfirm"
+            android:layout_below="@+id/txtPassword"
+            android:layout_alignParentStart="true"
+            android:hint="Confirm Password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPassword"
+            android:layout_below="@+id/txtEmail"
+            android:layout_alignParentStart="true"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtEmail"
+            android:layout_below="@+id/txtUserName"
+            android:layout_alignParentStart="true"
+            android:hint="Email" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtUserName"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="42dp"
+            android:hint="User First Last Name" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/btnCancel"
+            android:layout_alignTop="@+id/btnSignup"
+            android:layout_toEndOf="@+id/btnSignup"
+            android:layout_marginStart="62dp"
+            android:layout_alignBottom="@+id/btnSignup" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:id="@+id/btnSignup"
+            android:background="#1003fc"
+            android:textColor="#fcfcfc"
+            android:layout_marginTop="126dp"
+            android:layout_below="@+id/txtConfirm"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="77dp" />
+    </RelativeLayout>
+
+</FrameLayout>
